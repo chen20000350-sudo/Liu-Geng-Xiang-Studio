@@ -13,16 +13,16 @@
   }
 
   body {
-    font-family: "Noto Sans TC", Arial, sans-serif;
+    font-family: "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
     background: #F1EFE8;
     color: #1a1a18;
     line-height: 1.7;
   }
 
   .page {
-    max-width: 1080px;
+    max-width: 1180px;
     margin: 0 auto;
-    padding: 64px 24px;
+    padding: 72px 24px;
   }
 
   .label {
@@ -30,69 +30,136 @@
     letter-spacing: 2px;
     color: #D85A30;
     margin-bottom: 12px;
+    font-weight: 700;
   }
 
   h1 {
-    font-size: 48px;
-    line-height: 1.1;
-    margin-bottom: 16px;
+    font-size: clamp(36px, 6vw, 64px);
+    line-height: 1.05;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
   }
 
   .intro {
-    max-width: 680px;
-    color: #666;
+    max-width: 760px;
+    color: #555;
     font-size: 16px;
     margin-bottom: 48px;
   }
 
+  .summary-box {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 20px;
+    padding: 24px;
+    margin-bottom: 48px;
+  }
+
+  .summary-box h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .summary-box p {
+    color: #666;
+    font-size: 15px;
+  }
+
   .works-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
   }
 
   .work-card {
     background: #fff;
-    border-radius: 20px;
+    border-radius: 22px;
     overflow: hidden;
     border: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
   }
 
-  .work-card img {
+  .work-image {
+    background: #f7f7f7;
+  }
+
+  .work-image img {
     width: 100%;
     display: block;
-    background: #fff;
   }
 
   .work-body {
-    padding: 18px;
+    padding: 22px;
+  }
+
+  .work-tag {
+    display: inline-block;
+    font-size: 12px;
+    color: #D85A30;
+    background: #FAECE7;
+    border-radius: 999px;
+    padding: 4px 10px;
+    margin-bottom: 12px;
+    font-weight: 700;
   }
 
   .work-body h3 {
-    font-size: 18px;
-    margin-bottom: 6px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
   }
 
   .work-body p {
     font-size: 14px;
-    color: #777;
+    color: #666;
+    margin-bottom: 14px;
+  }
+
+  .points {
+    list-style: none;
+    margin-top: 12px;
+  }
+
+  .points li {
+    font-size: 14px;
+    color: #444;
+    padding: 5px 0 5px 18px;
+    position: relative;
+  }
+
+  .points li::before {
+    content: "↗";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    color: #D85A30;
+    font-size: 12px;
   }
 
   .back {
     display: inline-block;
-    margin-top: 48px;
+    margin-top: 56px;
     color: #D85A30;
     text-decoration: none;
     font-weight: 700;
   }
 
+  .back:hover {
+    text-decoration: underline;
+  }
+
   @media (max-width: 768px) {
-    h1 {
-      font-size: 34px;
+    .page {
+      padding: 48px 18px;
     }
 
     .works-grid {
       grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .work-body h3 {
+      font-size: 19px;
     }
   }
 </style>
@@ -100,59 +167,115 @@
 
 <body>
   <main class="page">
-    <div class="label">PORTFOLIO / MAIN VISUAL</div>
+    <div class="label">PORTFOLIO / E-COMMERCE MAIN VISUAL</div>
     <h1>電商商品主圖設計</h1>
+
     <p class="intro">
-      以下整理我製作過的 5W 夾式 LED 燈商品視覺，包含商品主圖、商說圖與賣點排版。重點放在讓消費者快速理解商品用途、功能與平台曝光需求。
+      以下整理我製作過的電商商品首圖作品。這些主圖的重點不只是讓畫面好看，而是讓消費者在平台列表或商品頁第一眼就能快速理解：商品是什麼、主打賣點是什麼，以及為什麼值得點進去看。
     </p>
+
+    <div class="summary-box">
+      <h2>設計重點</h2>
+      <p>
+        我在商品首圖設計上，會優先處理三件事：第一是商品主體要清楚，第二是核心賣點要一眼讀懂，第三是依照不同商品屬性調整視覺風格，例如生活感、清新感、送禮感、科技感或高單價信任感。
+      </p>
+    </div>
 
     <div class="works-grid">
 
       <div class="work-card">
-        <img src="images/LW-009-夾式LED燈-好記顯圖改.jpg" alt="5W 夾式 LED 燈主圖">
+        <div class="work-image">
+          <img src="images/主圖1.jpg" alt="智能感應泡泡洗手機商品主圖">
+        </div>
         <div class="work-body">
-          <h3>5W 夾式 LED 燈主圖</h3>
-          <p>以商品情境、亮度賣點與規格資訊整理成電商平台主視覺。</p>
+          <span class="work-tag">生活家電主圖</span>
+          <h3>智能感應泡泡洗手機</h3>
+          <p>以乾淨浴室情境搭配產品實拍感，建立「衛生、方便、家庭日常」的商品印象。</p>
+          <ul class="points">
+            <li>把商品功能重點集中在右側，提升資訊閱讀速度</li>
+            <li>用藍白色系強化清潔、防水、科技感</li>
+            <li>加入泡泡與手部使用情境，讓消費者快速理解商品用途</li>
+          </ul>
         </div>
       </div>
 
       <div class="work-card">
-        <img src="images/LW-009-黑色夾子-商說.jpg" alt="5W 夾式 LED 燈商說圖">
+        <div class="work-image">
+          <img src="images/主圖2.jpg" alt="益生菌漱口水商品主圖">
+        </div>
         <div class="work-body">
-          <h3>商品商說圖</h3>
-          <p>整理產品功能、使用情境與商品特色，讓消費者快速理解用途。</p>
+          <span class="work-tag">清潔用品主圖</span>
+          <h3>益生菌漱口水</h3>
+          <p>以清爽水感、葉子與水果元素塑造口腔清潔商品的清新感與香味聯想。</p>
+          <ul class="points">
+            <li>用大字標題建立強烈平台曝光效果</li>
+            <li>以產品陳列方式呈現多口味與系列感</li>
+            <li>用水花、果物、綠葉營造清潔與清新口氣的印象</li>
+          </ul>
         </div>
       </div>
 
       <div class="work-card">
-        <img src="images/LW-009-黑色夾子-商說02.jpg" alt="5W 夾式 LED 燈商說圖 02">
+        <div class="work-image">
+          <img src="images/主圖3.jpg" alt="水豚小夜燈商品主圖">
+        </div>
         <div class="work-body">
-          <h3>功能賣點排版</h3>
-          <p>將產品亮點轉成清楚的圖文資訊，適合商品詳情頁使用。</p>
+          <span class="work-tag">送禮情境主圖</span>
+          <h3>水豚小夜燈＋蠟燭燈</h3>
+          <p>以暖色燭光、玫瑰與禮物情境，強化商品的療癒、可愛與送禮感。</p>
+          <ul class="points">
+            <li>用暖光氛圍讓商品情緒更明確</li>
+            <li>標題主打「萌系造型」與「甜感送禮」</li>
+            <li>透過情境佈置提升商品價值感，而不只是單純白底展示</li>
+          </ul>
         </div>
       </div>
 
       <div class="work-card">
-        <img src="images/LW-009-黑色夾子-商說03.jpg" alt="5W 夾式 LED 燈商說圖 03">
+        <div class="work-image">
+          <img src="images/主圖4.jpg" alt="大容量沖洗器商品主圖">
+        </div>
         <div class="work-body">
-          <h3>使用情境設計</h3>
-          <p>用情境畫面提升商品想像，強化消費者對使用場景的理解。</p>
+          <span class="work-tag">衛生用品主圖</span>
+          <h3>大容量沖洗器</h3>
+          <p>以柔和紫色與乾淨背景建立女性用品、清潔護理與安心衛生的視覺感受。</p>
+          <ul class="points">
+            <li>用大標題快速傳達「大容量」與「清潔沖洗」</li>
+            <li>搭配產品盒裝，提升完整商品與品牌信任感</li>
+            <li>用贈品與抗菌資訊增加購買誘因</li>
+          </ul>
         </div>
       </div>
 
       <div class="work-card">
-        <img src="images/LW-009-黑色夾子-商說04.jpg" alt="5W 夾式 LED 燈商說圖 04">
+        <div class="work-image">
+          <img src="images/主圖5.jpg" alt="手機散熱器商品主圖">
+        </div>
         <div class="work-body">
-          <h3>商品商說圖</h3>
-          <p>整理產品功能、使用情境與商品特色，讓消費者快速理解用途。</p>
+          <span class="work-tag">科技產品主圖</span>
+          <h3>手機散熱器</h3>
+          <p>以黑綠高對比科技風格，營造遊戲玩家、降溫、效能穩定的產品印象。</p>
+          <ul class="points">
+            <li>用強烈黑綠配色抓住電競族群注意力</li>
+            <li>強調「瞬間降溫」「穩定不掉幀」等核心利益</li>
+            <li>使用速度線與電流感背景，讓畫面更有科技動能</li>
+          </ul>
         </div>
       </div>
 
       <div class="work-card">
-        <img src="images/LW-009-黑色夾子-商說05.jpg" alt="5W 夾式 LED 燈商說圖 05">
+        <div class="work-image">
+          <img src="images/主圖6.jpg" alt="MR800S 防水王機車行車紀錄器商品主圖">
+        </div>
         <div class="work-body">
-            <h3>商品商說圖</h3>
-          <p>整理產品功能、使用情境與商品特色，讓消費者快速理解用途。</p>
+          <span class="work-tag">高單價電子產品主圖</span>
+          <h3>MR800S 防水王機車行車紀錄器</h3>
+          <p>以黑金配色搭配產品組合展示，建立機車電子產品的專業感與信任感。</p>
+          <ul class="points">
+            <li>用型號大字建立商品記憶點</li>
+            <li>右側整理保固、停車監控、手機連線等購買決策資訊</li>
+            <li>產品本體、鏡頭與機車情境同時呈現，讓功能與使用場景更清楚</li>
+          </ul>
         </div>
       </div>
 
