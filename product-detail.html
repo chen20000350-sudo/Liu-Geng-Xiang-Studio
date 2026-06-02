@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>商品詳情頁 / 商說圖｜劉耕庠作品集</title>
+
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
+    background: #F1EFE8;
+    color: #1a1a18;
+    line-height: 1.7;
+  }
+
+  .page {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 72px 24px;
+  }
+
+  .label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #D85A30;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+
+  h1 {
+    font-size: clamp(36px, 6vw, 64px);
+    line-height: 1.05;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+  }
+
+  .intro {
+    max-width: 780px;
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 48px;
+  }
+
+  .summary-box {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 20px;
+    padding: 24px;
+    margin-bottom: 48px;
+  }
+
+  .summary-box h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .summary-box p {
+    color: #666;
+    font-size: 15px;
+  }
+
+  .section-title {
+    font-size: 30px;
+    margin: 56px 0 20px;
+    letter-spacing: -1px;
+  }
+
+  .detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  .detail-card {
+    background: #fff;
+    border-radius: 22px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+  }
+
+  .detail-card img {
+    width: 100%;
+    display: block;
+    background: #fff;
+  }
+
+  .detail-body {
+    padding: 20px 22px 24px;
+  }
+
+  .detail-tag {
+    display: inline-block;
+    font-size: 12px;
+    color: #D85A30;
+    background: #FAECE7;
+    border-radius: 999px;
+    padding: 4px 10px;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+
+  .detail-body h3 {
+    font-size: 21px;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+  }
+
+  .detail-body p {
+    font-size: 14px;
+    color: #666;
+  }
+
+  .full-width {
+    grid-column: 1 / -1;
+  }
+
+  .back {
+    display: inline-block;
+    margin-top: 56px;
+    color: #D85A30;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  .back:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .page {
+      padding: 48px 18px;
+    }
+
+    .detail-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .detail-body h3 {
+      font-size: 19px;
+    }
+  }
+</style>
+</head>
+
+<body>
+  <main class="page">
+    <div class="label">PORTFOLIO / PRODUCT DETAIL PAGE</div>
+    <h1>商品詳情頁 / 商說圖</h1>
+
+    <p class="intro">
+      以下整理我製作過的商品詳情頁與商說圖作品。這類素材的重點不是單張吸睛，而是把商品資訊依照消費者理解順序整理好，從規格、功能、使用情境、配件內容到購買疑慮，一步一步引導消費者理解商品價值。
+    </p>
+
+    <div class="summary-box">
+      <h2>設計重點</h2>
+      <p>
+        商品詳情頁需要處理大量資訊，我會把內容拆成「產品內容、核心功能、使用情境、規格資訊、操作說明、購買保障」等段落，讓消費者不用看長文字，也能透過圖文快速理解商品。
+      </p>
+    </div>
+
+    <h2 class="section-title">D8 行車紀錄器詳情頁</h2>
+
+    <div class="detail-grid">
+
+      <div class="detail-card">
+        <img src="detail-images/新版D8-保固說明.jpg" alt="D8 行車紀錄器保固說明">
+        <div class="detail-body">
+          <span class="detail-tag">售後保障</span>
+          <h3>保固資訊視覺化</h3>
+          <p>用金色標籤與大段落文字建立品牌信任感，強調 18 個月保固與購買後安心服務。</p>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <img src="detail-images/商說01.jpg" alt="D8 行車紀錄器頂級配置">
+        <div class="detail-body">
+          <span class="detail-tag">功能總覽</span>
+          <h3>主功能一次整理</h3>
+          <p>將 4K、WiFi、雙鏡頭、停車監控等規格以 icon 方式整理，讓消費者快速掃讀重點。</p>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <img src="detail-images/商說02.jpg" alt="D8 行車紀錄器後視鏡功能">
+        <div class="detail-body">
+          <span class="detail-tag">痛點解決</span>
+          <h3>解決行車視線問題</h3>
+          <p>用對比情境說明傳統後視鏡的死角與模糊問題，強調流媒體後視鏡的實際使用價值。</p>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <img src="detail-images/商說03.jpg" alt="D8 行車紀錄器廣角與畫質">
+        <div class="detail-body">
+          <span class="detail-tag">規格說明</span>
+          <h3>前後鏡頭畫質資訊</h3>
+          <p>以大字數據呈現 170° 廣角、12 吋螢幕、前 4K 與後 2.5K，降低規格理解成本。</p>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <img src="detail-images/商說04.jpg" alt="D8 行車紀錄器停車監控">
+        <div class="detail-body">
+          <span class="detail-tag">安全功能</span>
+          <h3>停車監控與碰撞感應</h3>
+          <p>用多情境圖示說明停車監控、碰撞鎖檔與循環錄影，強化行車安全與防護感。</p>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <img src="detail-images/商說05.jpg" alt="D8 行車紀錄器語音控制">
+        <div class="detail-body">
+          <span class="detail-tag">操作體驗</span>
+          <h3>語音控制功能</h3>
+          <p>把語音開關、錄影、拍照等功能轉成直覺畫面，讓使用者理解操作更方便。</p>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <img src="detail-images/商說06.jpg" alt="D8 行車紀錄器 WiFi 連線">
+        <div class="detail-body">
+          <span class="detail-tag">連線功能</span>
+          <h3>手機 WiFi 連線與回放</h3>
+          <p>透過手機與電腦畫面呈現下載、回放與路線記錄，提升科技感與實用性。</p>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <img src="detail-images/商說07.jpg" alt="D8 行車紀錄器商品內容">
+        <div class="detail-body">
+          <span class="detail-tag">內容物</span>
+          <h3>配件內容整理</h3>
+          <p>將主機、後鏡頭、電源線、說明書與固定配件清楚展開，降低購買前的不確定感。</p>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <img src="detail-images/商說08.jpg" alt="D8 行車紀錄器產品參數">
+        <div class="detail-body">
+          <span class="detail-tag">產品規格</span>
+          <h3>規格表整理</h3>
+          <p>用表格方式呈現鏡頭錄影、螢幕尺寸、WiFi、記憶卡與工作溫度等資訊，適合消費者比較。</p>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <img src="detail-images/商說09.jpg" alt="D8 行車紀錄器功能比較">
+        <div class="detail-body">
+          <span class="detail-tag">版本比較</span>
+          <h3>D8 主機功能比較</h3>
+          <p>將標準款、智慧款、旗艦款用表格比較，幫助消費者快速判斷適合自己的版本。</p>
+        </div>
+      </div>
+
+    </div>
+
+    <h2 class="section-title">5W USB 夾式 LED 射燈詳情頁</h2>
+
+    <div class="detail-grid">
+
+      <div class="detail-card">
+        <img src="detail-images/01.jpg" alt="5W USB 夾式 LED 射燈產品內容">
+        <div class="detail-body">
+          <span class="detail-tag">產品內容</span>
+          <h3>內容物與線材長度</h3>
+          <p>用白底清楚呈現燈具、線控、USB 供電線與六角扳手，讓消費者一眼知道收到哪些配件。</p>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <img src="detail-images/2.jpg" alt="5W USB 夾式 LED 射燈亮度調整">
+        <div class="detail-body">
+          <span class="detail-tag">亮度功能</span>
+          <h3>9 段亮度調整</h3>
+          <p>用情境打光與線控放大框呈現操作方式，讓「亮度可調」變成直覺可理解的賣點。</p>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <img src="detail-images/3.jpg" alt="5W USB 夾式 LED 射燈三色光">
+        <div class="detail-body">
+          <span class="detail-tag">色溫比較</span>
+          <h3>三種色溫選擇</h3>
+          <p>以三欄對比暖光、自然光與白光，讓消費者快速理解不同色溫適合的使用場景。</p>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <img src="detail-images/4.jpg" alt="5W USB 夾式 LED 射燈夾具尺寸">
+        <div class="detail-body">
+          <span class="detail-tag">安裝方式</span>
+          <h3>最大可夾約 6.3cm</h3>
+          <p>用手持夾具近拍與尺寸標示說明安裝條件，降低消費者擔心夾不住的疑慮。</p>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <img src="detail-images/5.jpg" alt="5W USB 夾式 LED 射燈旋轉角度">
+        <div class="detail-body">
+          <span class="detail-tag">角度調整</span>
+          <h3>萬向旋轉支架</h3>
+          <p>用箭頭與多角度殘影呈現旋轉能力，讓「照射方向可調」的功能更容易被看懂。</p>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <img src="detail-images/6.jpg" alt="5W USB 夾式 LED 射燈散熱與供電">
+        <div class="detail-body">
+          <span class="detail-tag">材質結構</span>
+          <h3>USB 供電與高效散熱</h3>
+          <p>用 USB 插頭與散熱鰭片圖示，強調即插即用、穩定照明與不易過熱。</p>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <img src="detail-images/7.jpg" alt="5W USB 夾式 LED 射燈線材">
+        <div class="detail-body">
+          <span class="detail-tag">線材設計</span>
+          <h3>173 公分加長線材</h3>
+          <p>透過線材長度、耐彎折與線控近拍，補足消費者對使用距離與耐用性的疑慮。</p>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <img src="detail-images/8.jpg" alt="5W USB 夾式 LED 射燈情境">
+        <div class="detail-body">
+          <span class="detail-tag">使用情境</span>
+          <h3>多場景使用展示</h3>
+          <p>用櫥窗、室內、畫廊與市集場景呈現商品用途，讓消費者能想像自己如何使用。</p>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <img src="detail-images/9.jpg" alt="5W USB 夾式 LED 射燈四大特點">
+        <div class="detail-body">
+          <span class="detail-tag">特點整理</span>
+          <h3>4 大產品特點</h3>
+          <p>把透鏡、散熱、USB 供電與夾具設計整理成模組化資訊，適合詳情頁中段快速掃讀。</p>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <img src="detail-images/10.jpg" alt="5W USB 夾式 LED 射燈產品規格">
+        <div class="detail-body">
+          <span class="detail-tag">規格整理</span>
+          <h3>產品規格表</h3>
+          <p>把功率、材質、色溫、供電方式、操作方式與安裝方式整理成清楚的規格資訊。</p>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <img src="detail-images/11.jpg" alt="5W USB 夾式 LED 射燈線控操作">
+        <div class="detail-body">
+          <span class="detail-tag">操作說明</span>
+          <h3>線控開關操作</h3>
+          <p>用按鍵放大圖與文字標示整理亮度、色溫、定時與電源控制，降低使用門檻。</p>
+        </div>
+      </div>
+
+    </div>
+
+    <a class="back" href="index.html">← 回首頁</a>
+  </main>
+</body>
+</html>
