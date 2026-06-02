@@ -872,10 +872,34 @@
     border-radius: 14px;
   }
 }
-  
+/* MOUSE ORANGE GLOW */
+.cursor-glow {
+  position: fixed;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  background: radial-gradient(circle, rgba(216,90,48,0.28) 0%, rgba(216,90,48,0.12) 35%, rgba(216,90,48,0) 70%);
+  transform: translate(-50%, -50%);
+  mix-blend-mode: multiply;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+body:hover .cursor-glow {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .cursor-glow {
+    display: none;
+  }
+}  
 </style>
 </head>
 <body>
+<div class="cursor-glow"></div>
 
 <nav>
   <a class="nav-logo" href="#hero">Liu<span>.</span></a>
@@ -1308,6 +1332,14 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1 });
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+const cursorGlow = document.querySelector('.cursor-glow');
+
+document.addEventListener('mousemove', (e) => {
+  if (!cursorGlow) return;
+  cursorGlow.style.left = e.clientX + 'px';
+  cursorGlow.style.top = e.clientY + 'px';
+});
 </script>
 </body>
 </html>
