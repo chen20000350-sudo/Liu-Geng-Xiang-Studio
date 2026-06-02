@@ -305,11 +305,18 @@
   /* PORTFOLIO */
   #portfolio { background: var(--soft); max-width: 100%; padding: 5rem 2rem; }
   #portfolio .inner { max-width: 960px; margin: 0 auto; }
+ .portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
   .portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem; margin-top: 3rem;
+    grid-template-columns: 1fr;
   }
+}
   .portfolio-card {
     background: var(--white); border-radius: 20px;
     overflow: hidden; border: 1px solid var(--border);
@@ -737,15 +744,16 @@
     <h2 class="section-title">作品分類</h2>
     <div class="portfolio-grid">
 
-      <a href="#work-main-image" class="portfolio-card main-card fade-in">
-        <div class="port-thumb port-thumb-1">🛒</div>
-        <div class="port-body">
-          <div class="port-main-badge">主要作品</div>
-          <div class="port-category">商品轉換素材</div>
-          <div class="port-title">電商商品主圖設計</div>
-          <div class="port-desc">蝦皮 / momo 商品主圖，以點擊率為目標，強調賣點視覺化與資訊層次設計。</div>
-        </div>
-      </div>
+ <a href="main-visual.html" class="portfolio-card main-card fade-in" target="_blank">
+  <div class="port-thumb port-thumb-1">🛒</div>
+  <div class="port-body">
+    <div class="port-main-badge">主要作品</div>
+    <div class="port-category">商品轉換素材</div>
+    <div class="port-title">電商商品主圖設計</div>
+    <div class="port-desc">蝦皮 / momo 商品主圖，以點擊率為目標，強調賣點視覺化與資訊層次設計。</div>
+    <div class="port-link">查看作品 →</div>
+  </div>
+</a>
 
       <div class="portfolio-card main-card fade-in">
         <div class="port-thumb port-thumb-2" style="font-size: 40px;">🎬</div>
