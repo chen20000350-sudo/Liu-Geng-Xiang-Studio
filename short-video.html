@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>短影音商品影片｜劉耕庠作品集</title>
+
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
+    background: #F1EFE8;
+    color: #1a1a18;
+    line-height: 1.7;
+  }
+
+  .page {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 72px 24px;
+  }
+
+  .label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #D85A30;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+
+  h1 {
+    font-size: clamp(36px, 6vw, 64px);
+    line-height: 1.05;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+  }
+
+  .intro {
+    max-width: 760px;
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 48px;
+  }
+
+  .summary-box {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 20px;
+    padding: 24px;
+    margin-bottom: 48px;
+  }
+
+  .summary-box h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .summary-box p {
+    color: #666;
+    font-size: 15px;
+  }
+
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  .video-card {
+    background: #fff;
+    border-radius: 22px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+  }
+
+  .video-wrap {
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  video {
+    width: 100%;
+    max-height: 620px;
+    display: block;
+    background: #111;
+  }
+
+  .video-body {
+    padding: 22px;
+  }
+
+  .video-tag {
+    display: inline-block;
+    font-size: 12px;
+    color: #D85A30;
+    background: #FAECE7;
+    border-radius: 999px;
+    padding: 4px 10px;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+
+  .video-body h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+  }
+
+  .video-body p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 14px;
+  }
+
+  .points {
+    list-style: none;
+    margin-top: 12px;
+  }
+
+  .points li {
+    font-size: 14px;
+    color: #444;
+    padding: 5px 0 5px 18px;
+    position: relative;
+  }
+
+  .points li::before {
+    content: "↗";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    color: #D85A30;
+    font-size: 12px;
+  }
+
+  .back {
+    display: inline-block;
+    margin-top: 56px;
+    color: #D85A30;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  .back:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .page {
+      padding: 48px 18px;
+    }
+
+    .video-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .video-body h3 {
+      font-size: 19px;
+    }
+  }
+</style>
+</head>
+
+<body>
+  <main class="page">
+    <div class="label">PORTFOLIO / SHORT VIDEO</div>
+    <h1>Reels / TikTok 商品影片</h1>
+
+    <p class="intro">
+      以下整理我製作過的商品短影音素材。重點放在前三秒吸引力、商品功能展示、字幕排版與節奏控制，讓消費者在短時間內理解商品用途與賣點。
+    </p>
+
+    <div class="summary-box">
+      <h2>影片製作重點</h2>
+      <p>
+        我在商品短影音製作時，會優先處理「前三秒鉤子」、「商品功能是否看得懂」、「字幕是否清楚」、「節奏是否適合手機滑動觀看」。影片不只是剪接，而是把商品賣點整理成容易被理解的動態素材。
+      </p>
+    </div>
+
+    <div class="video-grid">
+
+      <div class="video-card">
+        <div class="video-wrap">
+          <video controls playsinline preload="metadata">
+            <source src="videos/影片1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-body">
+          <span class="video-tag">商品短影音</span>
+          <h3>商品影片 01</h3>
+          <p>以快速開場呈現商品使用情境，讓觀眾先理解產品能解決什麼問題。</p>
+          <ul class="points">
+            <li>前三秒建立觀看動機</li>
+            <li>用字幕輔助理解商品賣點</li>
+            <li>控制畫面節奏，適合手機觀看</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-wrap">
+          <video controls playsinline preload="metadata">
+            <source src="videos/影片2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-body">
+          <span class="video-tag">商品短影音</span>
+          <h3>商品影片 02</h3>
+          <p>透過功能展示與畫面切換，讓商品特色在短時間內被看懂。</p>
+          <ul class="points">
+            <li>聚焦商品功能呈現</li>
+            <li>整理素材順序，避免資訊混亂</li>
+            <li>加強字幕與畫面的同步感</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-wrap">
+          <video controls playsinline preload="metadata">
+            <source src="videos/影片3.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-body">
+          <span class="video-tag">商品短影音</span>
+          <h3>商品影片 03</h3>
+          <p>用情境與產品細節搭配，提升商品的使用想像與購買理解。</p>
+          <ul class="points">
+            <li>結合情境畫面與商品特寫</li>
+            <li>強化商品使用前後的差異</li>
+            <li>讓影片更像電商素材而不是單純展示</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-wrap">
+          <video controls playsinline preload="metadata">
+            <source src="videos/影片4.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-body">
+          <span class="video-tag">商品短影音</span>
+          <h3>商品影片 04</h3>
+          <p>透過節奏剪輯與重點字幕，提升商品影片在社群平台上的可讀性。</p>
+          <ul class="points">
+            <li>使用簡短字幕降低理解成本</li>
+            <li>調整畫面節奏，避免拖沓</li>
+            <li>將商品賣點拆成易吸收的段落</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <a class="back" href="index.html">← 回首頁</a>
+  </main>
+</body>
+</html>
