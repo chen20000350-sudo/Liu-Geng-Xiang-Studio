@@ -95,6 +95,35 @@
     margin-bottom: 1.5rem;
   }
   .hero-name .accent { color: var(--coral); }
+.wave-line span {
+  display: inline-block;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.wave-name:hover .wave-line span {
+  animation: waveText 0.8s ease-in-out infinite;
+}
+
+.wave-line span:nth-child(1) { animation-delay: 0s; }
+.wave-line span:nth-child(2) { animation-delay: 0.05s; }
+.wave-line span:nth-child(3) { animation-delay: 0.1s; }
+.wave-line span:nth-child(4) { animation-delay: 0.15s; }
+.wave-line span:nth-child(5) { animation-delay: 0.2s; }
+.wave-line span:nth-child(6) { animation-delay: 0.25s; }
+.wave-line span:nth-child(7) { animation-delay: 0.3s; }
+.wave-line span:nth-child(8) { animation-delay: 0.35s; }
+.wave-line span:nth-child(9) { animation-delay: 0.4s; }
+.wave-line span:nth-child(10) { animation-delay: 0.45s; }
+
+@keyframes waveText {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+  
   .hero-sub {
     font-size: 18px; color: var(--muted);
     max-width: 540px; line-height: 1.6;
@@ -110,13 +139,27 @@
   .pill-outline { background: transparent; color: var(--dark); border-color: rgba(0,0,0,0.2); }
   .hero-cta { display: flex; gap: 12px; align-items: center; }
   .btn-primary {
-    background: var(--coral); color: var(--white);
-    padding: 12px 28px; border-radius: 100px;
-    text-decoration: none; font-weight: 500; font-size: 14px;
-    transition: opacity 0.2s; border: none; cursor: pointer;
-    display: inline-block;
-  }
-  .btn-primary:hover { opacity: 0.88; }
+  background: var(--coral);
+  color: var(--white);
+  padding: 12px 28px;
+  border-radius: 100px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: transform 0.2s ease, box-shadow 0.25s ease, opacity 0.2s;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.btn-primary:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 18px rgba(216,90,48,0.75),
+    0 0 36px rgba(216,90,48,0.45);
+}
   .btn-ghost {
     color: var(--dark); text-decoration: none;
     font-size: 14px; font-weight: 500;
@@ -303,7 +346,19 @@
   }
 
   /* PORTFOLIO */
-  #portfolio { background: var(--soft); max-width: 100%; padding: 5rem 2rem; }
+  #portfolio {
+  background: #11110f;
+  max-width: 100%;
+  padding: 5rem 2rem;
+}
+
+#portfolio .section-title {
+  color: var(--white);
+}
+
+#portfolio .section-label {
+  color: var(--coral-mid);
+}
   #portfolio .inner { max-width: 960px; margin: 0 auto; }
  .portfolio-grid {
   display: grid;
@@ -337,7 +392,30 @@
 .portfolio-card:link {
   color: inherit;
 }
-  .portfolio-card:hover { transform: translateY(-4px); }
+ .portfolio-card {
+  position: relative;
+}
+
+.portfolio-card::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #D85A30, #F0997B, #ffffff);
+  opacity: 0;
+  filter: blur(18px);
+  z-index: -1;
+  transition: opacity 0.25s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 28px rgba(216,90,48,0.45);
+}
+
+.portfolio-card:hover::before {
+  opacity: 0.9;
+}
   .portfolio-card.main-card { border: 2px solid var(--coral); }
   .port-thumb {
     height: 160px;
@@ -815,11 +893,19 @@
   <div class="hero-bg-text">LGX</div>
   <div class="hero-inner">
     <div class="hero-tag">電商美編 × 商品視覺 × 短影音素材</div>
-    <h1 class="hero-name">
-      劉耕庠<br>
-      <span class="accent">Liu</span><br>
-      Geng‑Xiang
-    </h1>
+   <h1 class="hero-name wave-name">
+  <span class="wave-line">
+    <span>劉</span><span>耕</span><span>庠</span>
+  </span>
+  <br>
+  <span class="wave-line accent">
+    <span>L</span><span>i</span><span>u</span>
+  </span>
+  <br>
+  <span class="wave-line">
+    <span>G</span><span>e</span><span>n</span><span>g</span><span>-</span><span>X</span><span>i</span><span>a</span><span>n</span><span>g</span>
+  </span>
+</h1>
     <p class="hero-sub">
       擅長把商品賣點轉化成<strong>讓人想點擊的視覺</strong>。<br>
       蝦皮 / momo 美編實務出身，短影音素材製作，<br>
