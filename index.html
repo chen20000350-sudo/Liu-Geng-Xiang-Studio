@@ -318,10 +318,25 @@
   }
 }
   .portfolio-card {
-    background: var(--white); border-radius: 20px;
-    overflow: hidden; border: 1px solid var(--border);
-    transition: transform 0.2s;
-  }
+  background: var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: transform 0.2s;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.portfolio-card,
+.portfolio-card * {
+  text-decoration: none;
+}
+
+.portfolio-card:visited,
+.portfolio-card:link {
+  color: inherit;
+}
   .portfolio-card:hover { transform: translateY(-4px); }
   .portfolio-card.main-card { border: 2px solid var(--coral); }
   .port-thumb {
