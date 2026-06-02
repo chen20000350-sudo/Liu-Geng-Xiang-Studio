@@ -501,6 +501,300 @@
     .nav-links { display: none; }
     .hero-bg-text { display: none; }
   }
+@media (max-width: 768px) {
+
+  body {
+    font-size: 15px;
+    overflow-x: hidden;
+  }
+
+  section,
+  #skills,
+  #portfolio,
+  #positions,
+  #contact {
+    padding: 4rem 1.25rem;
+  }
+
+  .hero-inner,
+  #skills .inner,
+  #portfolio .inner,
+  #positions .inner,
+  #contact .inner {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  /* NAV */
+  nav {
+    height: 54px;
+    padding: 0 1rem;
+  }
+
+  .nav-logo {
+    font-size: 17px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  /* HERO */
+  #hero {
+    min-height: auto;
+    padding: 7rem 1.25rem 4rem;
+  }
+
+  .hero-name {
+    font-size: clamp(42px, 15vw, 64px);
+    line-height: 0.98;
+    letter-spacing: -2px;
+    word-break: normal;
+  }
+
+  .hero-sub {
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 100%;
+  }
+
+  .hero-pills {
+    gap: 8px;
+    margin-bottom: 2rem;
+  }
+
+  .pill {
+    font-size: 12px;
+    padding: 5px 12px;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .btn-primary {
+    padding: 11px 24px;
+    font-size: 14px;
+  }
+
+  .hero-bg-text {
+    display: none;
+  }
+
+  /* COMMON TITLE */
+  .section-title {
+    font-size: 34px;
+    letter-spacing: -1px;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-label {
+    font-size: 10px;
+  }
+
+  /* ABOUT */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-text {
+    font-size: 15px;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .stat-card {
+    padding: 1rem;
+  }
+
+  .stat-num {
+    font-size: 28px;
+    white-space: normal;
+  }
+
+  .stat-label {
+    font-size: 13px;
+  }
+
+  /* SKILLS */
+  .skills-intro {
+    font-size: 14px;
+    margin-bottom: 2rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .skill-card {
+    padding: 1.35rem;
+  }
+
+  .skill-name {
+    font-size: 15px;
+  }
+
+  .skill-points li {
+    font-size: 13px;
+  }
+
+  /* EXPERIENCE */
+  .exp-item {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding-bottom: 2.25rem;
+    margin-bottom: 2.25rem;
+  }
+
+  .exp-title {
+    font-size: 20px;
+  }
+
+  .exp-desc,
+  .exp-points li {
+    font-size: 14px;
+  }
+
+  /* PORTFOLIO */
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-top: 2rem;
+  }
+
+  .portfolio-card {
+    border-radius: 18px;
+  }
+
+  .port-thumb {
+    height: 130px;
+    font-size: 40px;
+  }
+
+  .port-body {
+    padding: 1rem;
+  }
+
+  .port-title {
+    font-size: 16px;
+  }
+
+  .port-desc {
+    font-size: 13px;
+  }
+
+  /* AI WORKFLOW */
+  .pos-intro {
+    font-size: 14px;
+    color: rgba(255,255,255,0.55);
+    max-width: 100%;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+
+  .pos-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .pos-card {
+    padding: 1.25rem;
+  }
+
+  .pos-title {
+    font-size: 16px;
+  }
+
+  .pos-focus {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  /* SUMMARY */
+  .summary-cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .summary-card {
+    padding: 1.35rem;
+  }
+
+  .sum-text {
+    font-size: 14px;
+  }
+
+  /* CONTACT */
+  #contact {
+    padding: 5rem 1.25rem;
+  }
+
+  .contact-title {
+    font-size: 34px;
+    letter-spacing: -1px;
+  }
+
+  .contact-sub {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+  }
+
+  .contact-item {
+    font-size: 13px;
+  }
+
+  footer {
+    padding: 1.25rem;
+  }
+}
+
+
+/* 更小手機，例如 360px 寬 */
+@media (max-width: 420px) {
+
+  .hero-name {
+    font-size: 42px;
+    letter-spacing: -1.5px;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-num {
+    font-size: 30px;
+  }
+
+  .port-thumb {
+    height: 120px;
+  }
+
+  .summary-card,
+  .skill-card,
+  .pos-card {
+    border-radius: 14px;
+  }
+}
+  
 </style>
 </head>
 <body>
