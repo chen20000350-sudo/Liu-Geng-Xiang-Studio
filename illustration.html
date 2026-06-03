@@ -1,76 +1,395 @@
-<section class="work-category">
-  <h2>01｜3D 角色建模</h2>
-  <p class="category-desc">角色模型練習，包含正面、側面、線框與姿勢展示。</p>
+<!DOCTYPE html>
 
-  <div class="gallery-grid">
-    <div class="work-card">
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>平面設計 / 插畫 / 角色 — 劉耕庠作品集</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Syne:wght@400;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --coral: #D85A30;
+  --coral-light: #FAECE7;
+  --dark: #1a1a18;
+  --mid: #3a3a36;
+  --muted: #77756f;
+  --soft: #F1EFE8;
+  --white: #ffffff;
+  --border: rgba(0,0,0,0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  background: var(--soft);
+  color: var(--dark);
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 72px 24px 96px;
+}
+
+.back-link {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--coral);
+  margin-bottom: 44px;
+}
+
+.page-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: var(--coral);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.hero-title {
+  font-family: 'Syne', 'Noto Sans TC', sans-serif;
+  font-size: clamp(44px, 7vw, 76px);
+  font-weight: 800;
+  letter-spacing: -3px;
+  line-height: 1.05;
+  margin-bottom: 24px;
+}
+
+.hero-desc {
+  max-width: 760px;
+  color: var(--mid);
+  font-size: 16px;
+  line-height: 2;
+  margin-bottom: 48px;
+}
+
+.note-card {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 28px 32px;
+  border: 1px solid var(--border);
+  margin-bottom: 56px;
+}
+
+.note-card h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.note-card p {
+  color: var(--mid);
+  font-size: 15px;
+}
+
+.work-section {
+  margin-bottom: 80px;
+}
+
+.section-head {
+  margin-bottom: 28px;
+}
+
+.section-kicker {
+  font-family: 'DM Mono', monospace;
+  color: var(--coral);
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 8px;
+}
+
+.section-desc {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.work-card {
+  background: var(--white);
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 18px 50px rgba(0,0,0,0.06);
+}
+
+.work-image {
+  background: #f6f6f3;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.work-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  padding: 18px;
+}
+
+.work-image.no-padding img {
+  padding: 0;
+  object-fit: cover;
+}
+
+.work-body {
+  padding: 24px 26px 28px;
+}
+
+.work-tag {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--coral);
+  background: var(--coral-light);
+  border-radius: 999px;
+  padding: 3px 10px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.work-title {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.work-text {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  padding-top: 32px;
+  color: var(--muted);
+  font-size: 13px;
+  font-family: 'DM Mono', monospace;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 48px 18px 72px;
+  }
+
+  .back-link {
+    margin-bottom: 32px;
+  }
+
+  .hero-title {
+    letter-spacing: -1.5px;
+  }
+
+  .hero-desc {
+    font-size: 15px;
+    margin-bottom: 36px;
+  }
+
+  .note-card {
+    padding: 22px;
+    margin-bottom: 44px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .work-image {
+    height: auto;
+    min-height: 260px;
+  }
+
+  .work-image img {
+    height: auto;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<main class="page">
+
+<a class="back-link" href="index.html#portfolio">← 回作品集首頁</a>
+
+  <div class="page-label">Portfolio / Illustration / Character / 3D</div>
+  <h1 class="hero-title">平面設計 / 插畫 / 角色</h1>
+  <p class="hero-desc">
+    以下整理學生時期與個人創作作品，包含 3D 角色建模、角色設計、場景插畫與漫畫分鏡。
+    這些作品主要呈現我的造型設計能力、畫面構成、敘事分鏡與視覺風格探索。
+  </p>
+
+  <div class="note-card">
+    <h2>作品整理重點</h2>
+    <p>
+      這一類作品不是以電商轉換為主，而是補充呈現我的美術基礎、角色造型、空間透視與敘事構圖能力。
+      對於需要視覺發想、插畫輔助、角色素材或商品風格延伸的工作，也能作為設計能力參考。
+    </p>
+  </div>
+
+  <section class="work-section">
+    <div class="section-head">
+      <div class="section-kicker">01 / 3D MODELING</div>
+      <h2 class="section-title">3D 角色建模</h2>
+      <p class="section-desc">角色模型練習，包含角色造型、姿勢、側面結構與線框建模。</p>
+    </div>
+
+```
+<div class="gallery-grid">
+
+  <div class="work-card">
+    <div class="work-image">
       <img src="images/model-01.jpg.jpg" alt="3D 角色建模正面">
-      <div class="work-caption">
-        <h3>3D 角色正面展示</h3>
-        <p>角色比例、服裝造型與整體色彩設定。</p>
-      </div>
     </div>
+    <div class="work-body">
+      <div class="work-tag">3D Modeling</div>
+      <h3 class="work-title">3D 角色展示</h3>
+      <p class="work-text">角色比例、服裝造型與整體色彩設定，呈現角色完整外觀。</p>
+    </div>
+  </div>
 
-    <div class="work-card">
+  <div class="work-card">
+    <div class="work-image">
       <img src="images/model-02.jpg.jpg" alt="3D 角色側面展示">
-      <div class="work-caption">
-        <h3>3D 角色側面展示</h3>
-        <p>從側面呈現角色姿勢、披風與身體結構。</p>
-      </div>
     </div>
+    <div class="work-body">
+      <div class="work-tag">Side View</div>
+      <h3 class="work-title">角色側面結構</h3>
+      <p class="work-text">從側面檢視角色姿勢、披風、身體比例與造型剪影。</p>
+    </div>
+  </div>
 
-    <div class="work-card">
+  <div class="work-card">
+    <div class="work-image">
       <img src="images/model-03.jpg.jpg" alt="3D 頭部線框模型">
-      <div class="work-caption">
-        <h3>模型線框</h3>
-        <p>角色頭部與面部結構建模練習。</p>
-      </div>
     </div>
+    <div class="work-body">
+      <div class="work-tag">Wireframe</div>
+      <h3 class="work-title">模型線框</h3>
+      <p class="work-text">頭部與五官結構建模練習，呈現模型布線與立體結構。</p>
+    </div>
+  </div>
 
-    <div class="work-card">
+  <div class="work-card">
+    <div class="work-image">
       <img src="images/model-04.jpg.jpg" alt="3D 角色姿勢展示">
-      <div class="work-caption">
-        <h3>角色姿勢展示</h3>
-        <p>角色動作、肢體姿態與剪影表現。</p>
-      </div>
+    </div>
+    <div class="work-body">
+      <div class="work-tag">Pose</div>
+      <h3 class="work-title">角色姿勢展示</h3>
+      <p class="work-text">透過動作姿態呈現角色個性、肢體動勢與英雄感剪影。</p>
     </div>
   </div>
-</section>
 
-<section class="work-category">
-  <h2>02｜角色設計 / 插畫</h2>
-  <p class="category-desc">以角色外型、服裝、氣質與世界觀氛圍為主的插畫作品。</p>
+</div>
+```
 
-  <div class="gallery-grid">
-    <div class="work-card">
+  </section>
+
+  <section class="work-section">
+    <div class="section-head">
+      <div class="section-kicker">02 / CHARACTER DESIGN</div>
+      <h2 class="section-title">角色設計 / 插畫</h2>
+      <p class="section-desc">以角色外型、服裝、氣質與世界觀氛圍為主的創作作品。</p>
+    </div>
+
+```
+<div class="gallery-grid">
+
+  <div class="work-card">
+    <div class="work-image">
       <img src="images/character-01.jpg.jpg" alt="角色設計插畫">
-      <div class="work-caption">
-        <h3>角色設計</h3>
-        <p>人物造型與幻想元素的結合。</p>
-      </div>
+    </div>
+    <div class="work-body">
+      <div class="work-tag">Character</div>
+      <h3 class="work-title">角色設計</h3>
+      <p class="work-text">人物造型與幻想元素結合，探索角色身體特徵與視覺辨識度。</p>
     </div>
   </div>
-</section>
 
-<section class="work-category">
-  <h2>03｜漫畫分鏡 / 場景構圖</h2>
-  <p class="category-desc">包含生活場景、空間透視與黑白漫畫分鏡練習。</p>
+  <div class="work-card">
+    <div class="work-image no-padding">
+      <img src="images/scene-01.jpg.jpg" alt="生活場景插畫">
+    </div>
+    <div class="work-body">
+      <div class="work-tag">Scene</div>
+      <h3 class="work-title">生活場景構圖</h3>
+      <p class="work-text">以陽台空間、人物動作與光影建立日常敘事感。</p>
+    </div>
+  </div>
 
-  <div class="gallery-grid">
-    <div class="work-card full">
-      <img src="images/scene-01.jpg.jpg" alt="陽台生活場景插畫">
-      <div class="work-caption">
-        <h3>生活場景構圖</h3>
-        <p>以陽台空間、人物動作與光影建立日常敘事感。</p>
-      </div>
+</div>
+```
+
+  </section>
+
+  <section class="work-section">
+    <div class="section-head">
+      <div class="section-kicker">03 / COMIC STORYBOARD</div>
+      <h2 class="section-title">漫畫分鏡 / 場景構圖</h2>
+      <p class="section-desc">包含黑白漫畫分鏡、空間透視、人物動線與故事氣氛安排。</p>
     </div>
 
-    <div class="work-card full">
+```
+<div class="gallery-grid">
+
+  <div class="work-card">
+    <div class="work-image no-padding">
       <img src="images/comic-01.jpg.jpg" alt="漫畫分鏡作品">
-      <div class="work-caption">
-        <h3>漫畫分鏡</h3>
-        <p>黑白線稿、場景透視與人物動線練習。</p>
-      </div>
+    </div>
+    <div class="work-body">
+      <div class="work-tag">Comic</div>
+      <h3 class="work-title">漫畫分鏡</h3>
+      <p class="work-text">透過場景透視、人物站位與黑白線稿，練習敘事節奏與畫面調度。</p>
     </div>
   </div>
-</section>
+
+</div>
+```
+
+  </section>
+
+  <div class="footer">
+    © 2025 劉耕庠 Liu Geng-Xiang · Illustration / Character / 3D Works
+  </div>
+
+</main>
+
+</body>
+</html>
