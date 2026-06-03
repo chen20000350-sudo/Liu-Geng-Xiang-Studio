@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>電商行銷知識整理 — 劉耕庠作品集</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Syne:wght@400;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --coral: #D85A30;
+  --coral-light: #FAECE7;
+  --dark: #1a1a18;
+  --mid: #3a3a36;
+  --muted: #77756f;
+  --soft: #F1EFE8;
+  --white: #ffffff;
+  --border: rgba(0,0,0,0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  background: var(--soft);
+  color: var(--dark);
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 72px 24px 96px;
+}
+
+.back-link {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--coral);
+  margin-bottom: 44px;
+}
+
+.page-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: var(--coral);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.hero-title {
+  font-family: 'Syne', 'Noto Sans TC', sans-serif;
+  font-size: clamp(44px, 7vw, 76px);
+  font-weight: 800;
+  letter-spacing: -3px;
+  line-height: 1.05;
+  margin-bottom: 24px;
+}
+
+.hero-desc {
+  max-width: 820px;
+  color: var(--mid);
+  font-size: 16px;
+  line-height: 2;
+  margin-bottom: 48px;
+}
+
+.note-card {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 28px 32px;
+  border: 1px solid var(--border);
+  margin-bottom: 56px;
+}
+
+.note-card h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.note-card p {
+  color: var(--mid);
+  font-size: 15px;
+}
+
+.work-section {
+  margin-bottom: 80px;
+}
+
+.section-head {
+  margin-bottom: 28px;
+}
+
+.section-kicker {
+  font-family: 'DM Mono', monospace;
+  color: var(--coral);
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 8px;
+}
+
+.section-desc {
+  color: var(--muted);
+  font-size: 15px;
+  max-width: 780px;
+}
+
+.work-card {
+  background: var(--white);
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 18px 50px rgba(0,0,0,0.06);
+  margin-bottom: 32px;
+}
+
+.work-image {
+  background: #f6f6f3;
+  overflow: hidden;
+}
+
+.work-image img {
+  width: 100%;
+  display: block;
+}
+
+.work-body {
+  padding: 24px 28px 30px;
+}
+
+.work-tag {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--coral);
+  background: var(--coral-light);
+  border-radius: 999px;
+  padding: 3px 10px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.work-title {
+  font-size: 21px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.work-text {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.two-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  padding-top: 32px;
+  color: var(--muted);
+  font-size: 13px;
+  font-family: 'DM Mono', monospace;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 48px 18px 72px;
+  }
+
+  .back-link {
+    margin-bottom: 32px;
+  }
+
+  .hero-title {
+    letter-spacing: -1.5px;
+  }
+
+  .hero-desc {
+    font-size: 15px;
+    margin-bottom: 36px;
+  }
+
+  .note-card {
+    padding: 22px;
+    margin-bottom: 44px;
+  }
+
+  .two-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<main class="page">
+
+  <a class="back-link" href="index.html#portfolio">← 回作品集首頁</a>
+
+  <div class="page-label">Portfolio / E-commerce Marketing Learning</div>
+  <h1 class="hero-title">電商行銷知識整理</h1>
+
+  <p class="hero-desc">
+    這一區整理我在電商美編工作之外，自主補強的商品成本、平台活動與廣告邏輯。
+    內容包含商品組合毛利試算、進貨成本與售價估算，以及蝦皮活動操作筆記。
+    目標是讓自己的設計判斷不只停留在畫面美感，也能理解商品是否適合主推、是否具備利潤空間，以及平台活動如何影響轉換。
+  </p>
+
+  <div class="note-card">
+    <h2>整理重點</h2>
+    <p>
+      這一頁不是實際廣告投放成果，而是我對電商營運邏輯的學習整理。
+      透過成本表、毛利率、平台費、廣告費與活動機制，練習用更接近營運與行銷的角度思考商品視覺。
+    </p>
+  </div>
+
+  <section class="work-section">
+    <div class="section-head">
+      <div class="section-kicker">01 / PROFIT CALCULATION</div>
+      <h2 class="section-title">商品組合成本與毛利試算</h2>
+      <p class="section-desc">
+        整理商品組合售價、平台費、廣告費、運費、後扣與商品成本，練習判斷不同組合是否具備足夠毛利空間，並依毛利率判斷是否適合作為活動主推或廣告測試商品。
+      </p>
+    </div>
+
+    <div class="work-card">
+      <div class="work-image">
+        <img src="images/數據04.jpg" alt="商品組合成本與毛利試算">
+      </div>
+      <div class="work-body">
+        <div class="work-tag">商品組合 / 毛利率</div>
+        <h3 class="work-title">組合商品毛利判斷</h3>
+        <p class="work-text">
+          透過售價、實收、商品成本、平台費、廣告費、運費與後扣，計算不同組合的毛利與毛利率，判斷商品是否適合主推、廣告測試或需要調整售價與成本。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work-section">
+    <div class="section-head">
+      <div class="section-kicker">02 / COST ESTIMATION</div>
+      <h2 class="section-title">商品成本與預估售價試算</h2>
+      <p class="section-desc">
+        依照商品 RMB 成本、匯率、重量、運費、配件與含稅成本，練習估算商品售價與淨利潤，協助判斷商品是否具備基本利潤空間。
+      </p>
+    </div>
+
+    <div class="work-card">
+      <div class="work-image">
+        <img src="images/數據01.jpg" alt="商品成本與預估售價試算">
+      </div>
+      <div class="work-body">
+        <div class="work-tag">成本 / 售價</div>
+        <h3 class="work-title">單品成本與售價估算</h3>
+        <p class="work-text">
+          透過匯率、重量、運費與平台抽成概念，練習從商品成本推估售價與利潤空間，避免只用視覺角度判斷商品價值。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work-section">
+    <div class="section-head">
+      <div class="section-kicker">03 / SHOPEE STRATEGY NOTES</div>
+      <h2 class="section-title">蝦皮活動與廣告邏輯整理</h2>
+      <p class="section-desc">
+        自主整理蝦皮賣場常見活動與廣告操作邏輯，包含滿額贈、階梯折扣券、媒體櫃標籤、ROAS 設定、商品規格設計與客服導購話術。
+      </p>
+    </div>
+
+    <div class="two-grid">
+
+      <div class="work-card">
+        <div class="work-image">
+          <img src="images/數據02.jpg" alt="蝦皮活動與廣告邏輯整理上半部">
+        </div>
+        <div class="work-body">
+          <div class="work-tag">活動 / 廣告</div>
+          <h3 class="work-title">平台活動邏輯整理</h3>
+          <p class="work-text">
+            整理滿額贈、階梯折扣券、媒體櫃標籤與 ROAS 設定，理解活動如何影響商品曝光、點擊與轉換。
+          </p>
+        </div>
+      </div>
+
+      <div class="work-card">
+        <div class="work-image">
+          <img src="images/數據03.jpg" alt="蝦皮活動與廣告邏輯整理下半部">
+        </div>
+        <div class="work-body">
+          <div class="work-tag">流量 / 導購</div>
+          <h3 class="work-title">流量品與導購筆記</h3>
+          <p class="work-text">
+            整理流量品判斷、商品影片內容重點與客服導購話術，理解消費者從看見商品到下單之間的決策過程。
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="footer">
+    © 2025 劉耕庠 Liu Geng-Xiang · E-commerce Marketing Learning
+  </div>
+
+</main>
+
+</body>
+</html>
